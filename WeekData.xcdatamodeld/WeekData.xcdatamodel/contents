@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="DayData" representedClassName=".DayData" syncable="YES">
+        <attribute name="breakfastMealId" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dinnerMealId" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lunchMealId" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="FoodItem" representedClassName=".FoodItem" syncable="YES">
+        <attribute name="calories" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="foodDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="foodId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="foodName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MealData" representedClassName=".MealData" syncable="YES">
+        <attribute name="foodItems" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mealDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mealImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="restaurants" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="Restaurant" representedClassName=".Restaurant" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DayData" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="FoodItem" positionX="-63" positionY="36" width="128" height="105"/>
+        <element name="MealData" positionX="-63" positionY="9" width="128" height="135"/>
+        <element name="Restaurant" positionX="-63" positionY="36" width="128" height="90"/>
+    </elements>
+</model>
